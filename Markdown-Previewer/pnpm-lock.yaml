@@ -8,6 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@iconify-react/solar':
+        specifier: ^1.0.2
+        version: 1.0.2(react@19.2.7)
+      '@iconify-react/uim':
+        specifier: ^1.0.2
+        version: 1.0.2(react@19.2.7)
+      ogl:
+        specifier: ^1.0.11
+        version: 1.0.11
       react:
         specifier: ^19.2.6
         version: 19.2.7
@@ -188,6 +197,20 @@ packages:
   '@humanwhocodes/retry@0.4.3':
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
+
+  '@iconify-react/solar@1.0.2':
+    resolution: {integrity: sha512-5D7+IRlnN35GRfZj8F7X/XJXjIg3MBcJvqlRCBhkEQOFQxIjsF8inNa5rSnvxOi4BboQDtaRfqrJDNKCvkYBtw==}
+
+  '@iconify-react/uim@1.0.2':
+    resolution: {integrity: sha512-XOw2I5+yYW4YsKlE8C/wnQK0QOYQPIJLzp51PHPriqGil7GCr4DoiWyQ+rDTOaHYsGo965BL1ixfSPxesFpApA==}
+
+  '@iconify/css-react@1.0.2':
+    resolution: {integrity: sha512-k33FKG4jGgd8odos+1HdSwCKZOQ5F1heQxwl/zDrA53tLg5IseDPMqsmQbcCEZ6E0Zgcrmfo4ceFSBmbuEvGtw==}
+    peerDependencies:
+      react: '>=18.0.0'
+
+  '@iconify/types@2.0.0':
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -729,6 +752,9 @@ packages:
     resolution: {integrity: sha512-Uzmd6LXpouKo8EUK68IjH4+E01w/hXyV3R3g/geCJo+rXLNfh1xucB+LOzYEOQPSiUK3h/xZf0cQGcSsmyL2Og==}
     engines: {node: '>=18'}
 
+  ogl@1.0.11:
+    resolution: {integrity: sha512-kUpC154AFfxi16pmZUK4jk3J+8zxwTWGPo03EoYA8QPbzikHoaC82n6pNTbd+oEaJonaE8aPWBlX7ad9zrqLsA==}
+
   optionator@0.9.4:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
     engines: {node: '>= 0.8.0'}
@@ -1082,6 +1108,25 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/retry@0.4.3': {}
+
+  '@iconify-react/solar@1.0.2(react@19.2.7)':
+    dependencies:
+      '@iconify/css-react': 1.0.2(react@19.2.7)
+    transitivePeerDependencies:
+      - react
+
+  '@iconify-react/uim@1.0.2(react@19.2.7)':
+    dependencies:
+      '@iconify/css-react': 1.0.2(react@19.2.7)
+    transitivePeerDependencies:
+      - react
+
+  '@iconify/css-react@1.0.2(react@19.2.7)':
+    dependencies:
+      '@iconify/types': 2.0.0
+      react: 19.2.7
+
+  '@iconify/types@2.0.0': {}
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
@@ -1561,6 +1606,8 @@ snapshots:
   natural-compare@1.4.0: {}
 
   node-releases@2.0.47: {}
+
+  ogl@1.0.11: {}
 
   optionator@0.9.4:
     dependencies:
